@@ -17,10 +17,19 @@ contract raffleTicket{
 
 
     //state variables
+<<<<<<< HEAD
 
     // @dev ticketPrice is the price of the ticket and must be called 
+=======
+>>>>>>> 648f40fa42c5e51f437bf4889b08c47fb2b64395
     uint private immutable i_ticketPrice;
+    error Raffle__InsufficientETH();
+    //we use the s_ beacuse there are stored in the storage
+    address[] private s_participants;
 
+    //events
+
+<<<<<<< HEAD
     //error
     error Raffle__InsufficientETH();
     error Raffle__TrasferedFailed();
@@ -73,6 +82,12 @@ contract raffleTicket{
 
     //constructor
     constructor(uint ticketPrice, uint interval, address vfrCordinator, bytes32 gasLane, uint64 subscriptionId, uint32 callbackgas){
+=======
+    event RafflesEntered(address indexed player);
+
+    //constructor
+    constructor(uint ticketPrice){
+>>>>>>> 648f40fa42c5e51f437bf4889b08c47fb2b64395
         i_ticketPrice = ticketPrice;
         i_interval = interval;
         s_timestamp = block.timestamp;
@@ -87,22 +102,31 @@ contract raffleTicket{
     }
 
     function enterdrew() external payable {
+<<<<<<< HEAD
         // we stop using require because it will consume all the gas
+=======
+        //We stop using Require because it consumes all the gas
+>>>>>>> 648f40fa42c5e51f437bf4889b08c47fb2b64395
         //require(msg.value >= i_ticketPrice, "Raffle: Insufficient amount");
         if (msg.value < i_ticketPrice) { // this saves gas
             revert Raffle__InsufficientETH();
         }
+<<<<<<< HEAD
         if(s_rafflestate != RaffleState.OPEN){
             revert Raffle__NotOpenRaffle;
         }
         s_participants.push(payable(msg.sender));
 
         //this emit the sender address
+=======
+        s_participants.push(payable(msg.sender));
+>>>>>>> 648f40fa42c5e51f437bf4889b08c47fb2b64395
         emit RafflesEntered(msg.sender);
 
     }
     //make it random
     //
+<<<<<<< HEAD
     function pickwinner() external {
         //This code checks if the difference between the current block's timestamp and a stored timestamp 
         //(s_timestamp) is less than a specified interval (i_interval).
@@ -125,6 +149,9 @@ contract raffleTicket{
         );
 
     }
+=======
+    function pickwinner() public { 
+>>>>>>> 648f40fa42c5e51f437bf4889b08c47fb2b64395
 
     function fullfillRandom(
         uint256 requestId,
