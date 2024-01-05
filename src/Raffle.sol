@@ -124,10 +124,27 @@ contract raffleTicket{
         emit RafflesEntered(msg.sender);
 
     }
+
+/**
+ * the checkUpKeep functions is the one called to check the chainlink automation 
+ * to call the automation function, three things must be true 
+ * the time interval has passed between the last raffle draw and the current time
+ * the raffle state must be open
+ * the number of participants must be greater than 0
+ */
+    function checkUpKeep(bytes memory /*checkData*/) public view returns (bool upkeepNeeded, bytes memory /*performData*/) {
+          bool timehasPassed = (block.timestamp - s_timestamp) >= i_interval;
+          bool isOpen = RaffleState.OPEN == s_rafflestate;
+          bool hasBalance = address(this).balance > 0;
+          bool hasPlayers = s_participants.length > 0;
+          upkeepNeeded = (timehasPassed && isOpen && hasBalance && hasPlayers);
+          return (upkeepNeeded, "0x0");
+
+    }
     //make it random
     //
 <<<<<<< HEAD
-    function pickwinner() external {
+    function performUpkeep(bytes calldata /* performData */) external {
         //This code checks if the difference between the current block's timestamp and a stored timestamp 
         //(s_timestamp) is less than a specified interval (i_interval).
         if((block.timestamp - s_timestamp) < i_interval){
