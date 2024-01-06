@@ -11,4 +11,12 @@ The code is to create a probable random smart contract lottery
 2. After a period the contract automaticlly picks a 'RANDOM WINNER' programatically 
 3. We will use CHAINLINK VRF and CHAINLINK Automation 
     1. CHAINLINK VRF => Randomness
-    2. CHAINLINK AUTOMATION => Time based
+    2. CHAINLINK AUTOMATION => Time based trigger 
+
+## Tests
+
+1. Write some deploy script 
+2. Write some tests
+    1. It shoulf work on local chain
+    2. Forked Testnet
+    3. Forked Mainnet 
