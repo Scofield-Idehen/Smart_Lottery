@@ -125,7 +125,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"day2/day1.sol": "scofield"
+			"contracts/test2.sol": "scofield"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -139,12 +139,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"day2/day1.sol": {
-			"keccak256": "0xd3f0d5d485320cb06497d13ce9e2132e1f4b77bfad59b6e328ff85fc55455c67",
+		"contracts/test2.sol": {
+			"keccak256": "0x0733ee35ab380325b2988ea497c33ad76127486f5d74d5b9d4326c8f9b6728c3",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://fef6b3e4a8d90f3fa2f1a2ad4c7591e101273c2baf04719c55fafab512004081",
-				"dweb:/ipfs/QmYhewrZ9jqwBzsRzZc5dtyyaaNrUeLgGBdBqN1dCbiag1"
+				"bzz-raw://c6c59319df4bb60bc059ccc86742c844907679e997a414b94ed01b7caf25a3af",
+				"dweb:/ipfs/QmRVB13KaZKuqDixKB8Z8qzyX4jwyoqiWNoS6eFcq7xShG"
 			]
 		}
 	},

@@ -1,0 +1,74 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "createnewContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "newscofield",
+				"outputs": [
+					{
+						"internalType": "contract scofield",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/test1.sol": "storageFactory"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/test1.sol": {
+			"keccak256": "0x75d7f900ca95bcc409b7030cf22b841ebd22cf50f045e5c7a64615baf0f289a0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bb8909370b5ffceb47bf43a7479ddb10857ac0ab6fd57ba55be321c19fc1be22",
+				"dweb:/ipfs/QmWHzMTt88rVj5hMyCkV5zuxQ8BEN7hhpQus5ZqxN2kQQz"
+			]
+		},
+		"contracts/test2.sol": {
+			"keccak256": "0x722fe7ba382d726255882e7f71d75e0c615b5e538ea1155b315afb9729a7721d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d70da1fde6516ae44bda74a7318553f36d322095b9c16f3940a566c68ee7c811",
+				"dweb:/ipfs/QmbQgU5KJ2h7SsRGENYACDSsuvbYFRLWJgxYHvpymPv2ae"
+			]
+		}
+	},
+	"version": 1
+}

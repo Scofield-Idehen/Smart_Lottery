@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.5;
+pragma solidity ^0.8.24;
 
 
 contract scofield {
@@ -19,7 +19,7 @@ contract scofield {
     //dynamic array to store value
     NewPerson[] public listofPerson;
 
-    function addPerson(uint _favouritePerson)public{
+    function addPerson(uint _favouritePerson)public virtual{
         Favourite_person = _favouritePerson;
     }
     //pure and view 
