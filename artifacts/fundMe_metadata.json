@@ -7,6 +7,11 @@
 		"abi": [
 			{
 				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
 				"name": "fund",
 				"outputs": [],
 				"stateMutability": "payable",
@@ -62,6 +67,26 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -108,11 +133,11 @@
 			]
 		},
 		"storageFactory.sol": {
-			"keccak256": "0xf12ec09f7db4f5416dd093507b4afc1a1b24e75ddaa8180fb98c668c9f47cd69",
+			"keccak256": "0x30bff8c3060feb185813f7ced238fac7b7b251e3bf54972065f3f2dfd80ffe24",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b218e6584b8ffed2f5274ef1f0552157b6329f9cadfe27909656145499cc0bd0",
-				"dweb:/ipfs/QmUP34YrSnb9vynBSR4AssaSARb7s4HrhpTUdK6ffiMJHb"
+				"bzz-raw://133e4c51d2580e23ff0d2b91ce751087556f09d7415c74a20f1a283feb61d1ff",
+				"dweb:/ipfs/QmTFg83WB2JYQCdDwnsuebNrdNCBkuiyfazGR4CyBFGgdj"
 			]
 		}
 	},

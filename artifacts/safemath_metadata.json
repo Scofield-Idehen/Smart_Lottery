@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "bignumber",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_safemath",
+						"type": "uint256"
+					}
+				],
+				"name": "safetoday",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"bigmath.sol": "safemath"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"bigmath.sol": {
+			"keccak256": "0x6dc53d52bdac532c8386d6f8f827befa4fb41387c5bcef0b837dc7fc7ef8c111",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e125f1c319ce7b9dddd2dc408fe72cb7fcc509c2f4df11d07e65db691a18a310",
+				"dweb:/ipfs/Qmbh15PETeUtc9Gmn3Tao3LYftQjzVTND8GQSMK7rbfzuV"
+			]
+		}
+	},
+	"version": 1
+}
